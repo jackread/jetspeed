@@ -1,0 +1,276 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'fofermedium';
+  src: url('fofer-webfont.woff2') format('woff2'),
+       url('fofer-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'miuscriptregular';
+    src: url('miuscript-webfont.woff2') format('woff2'),
+         url('miuscript-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/**
+ * Basic styling
+ */
+body {
+  font: 400 16px/1.5 "Open Sans", Helvetica, Arial, sans-serif;
+  color: #111;
+  background-color: #fdfdfd;
+  min-width: 320px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+.highlight {
+  margin-top: 0;
+  margin-bottom: 30px; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fugaz One', cursive;
+  text-transform:uppercase;
+  display:block;
+  line-height: 1.2em;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 90px;
+  line-height: 90px;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  color: rgba(0,0,0,0.5);
+  margin: 20px 0 0 0;
+}
+
+h4 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+p {
+  font-size: 17px;
+  margin-top: 0;
+  line-height: 25px;
+}
+
+p.last {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+a.link {
+  font-size: 15px;
+  color: #C58B94;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.wrapper {
+  margin: 0 20px;
+  position: relative;
+}
+
+.wrapper-large {
+    margin: 0 20px;
+    position: relative;
+  }
+
+@media (min-width: 1200px) {
+  .wrapper-large {
+    width: 1180px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .wrapper-large {
+    width: 1380px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1600px) {
+  .wrapper-large {
+    width: 1580px;
+    margin: 0 auto;
+  }
+}
+
+.site-header,
+.site-footer {
+  background: #9DA597;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.site-title span{
+  font-family: 'Fugaz One', cursive;
+  text-transform:uppercase;
+  display:block;
+  font-size: 90px;
+  line-height: 90px;
+}
+
+.site-title {
+  font-family: 'Keania One', cursive;
+  font-size: 45px;
+  text-align:center;
+  color: #FFF;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  
+}
+
+.button {
+  height: 30px;
+  padding: 10px 25px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+  color: #000;
+  background: rgba(0,0,0,0.1);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 16px;
+  text-decoration: none;
+  width: 230px;
+  margin: 60px auto 0 auto;
+
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+
+  -webkit-transition: opacity 250ms ease-in-out;
+  -moz-transition: opacity 250ms ease-in-out;
+  -ms-transition: opacity 250ms ease-in-out;
+  -o-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
+}
+
+.primary {
+  background: #B0D0B8;
+}
+
+.secondary {
+  background: #C58B94;
+}
+
+.disabled {
+  background: #999;
+  opacity: 0.5;
+}
+
+.button.small {
+  height: 26px;
+  padding: 5px 10px;
+  line-height: 26px;
+  margin: 15px 0 30px 0;
+  display: inline-block;
+  width: 90px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+  .button:hover {
+    opacity: 0.6;
+  }
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+.white-section {
+  padding: 50px 0;
+}
+
+@media (min-width: 768px) {
+  .white-section {
+    padding: 90px 0;
+  }
+}
+
+.products {
+  margin: 0 0 50px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-item {
+  list-style: none;
+  margin: 0 10px;
+  padding: 20px;
+  width: 200px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  height: 510px;
+}
+
+.product-item img{
+  display: block;
+  width: 240px;
+  margin: -20px -20px 0 -20px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
