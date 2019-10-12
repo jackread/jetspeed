@@ -159,15 +159,20 @@ a.link {
   font-family: 'Fugaz One', cursive;
   text-transform:uppercase;
   display:block;
-  font-size: 90px;
-  line-height: 90px;
+  font-size: 120px;
+  line-height: 120px;
+  background: -webkit-linear-gradient(#00ABFA, #FA2900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width:5px;
+   -webkit-text-stroke-color: black;
 }
 
 .site-title {
   font-family: 'Keania One', cursive;
   font-size: 45px;
   text-align:center;
-  color: #FFF;
+  color: #000;
   text-decoration: none;
 }
 
